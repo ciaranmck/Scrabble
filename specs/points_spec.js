@@ -14,7 +14,7 @@ it('should display BLANK as 0 points', function () {
 });
 
 it('should display ONE as 1 point', function () {
-	assert.strictEqual(1, points.POINTS.ONE);
+	assert.strictEqual(1, points.POINTS.ONE.value);
 });
 
 });
