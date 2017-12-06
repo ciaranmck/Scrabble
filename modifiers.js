@@ -6,24 +6,24 @@ var Modifier = function () {
 	this.tripleLetter;
 }
 
-Modifier.prototype.baseTile = function(lettervalue) {
-	return lettervalue;
+Modifier.prototype.baseTile = function(wordValue) {
+	return wordValue;
 }
 
-Modifier.prototype.doubleLetter = function(lettervalue) {
-	return this.doubleLetter = lettervalue * 2
+Modifier.prototype.doubleLetter = function(letterValue) {
+	return this.doubleLetter = letterValue * 2
 };
 
-Modifier.prototype.tripleLetter = function(lettervalue) {
-	return this.tripleWord = lettervalue * 3
+Modifier.prototype.tripleLetter = function(letterValue) {
+	return this.tripleWord = letterValue * 3
 };
 
-Modifier.prototype.doubleWord = function(wordvalue) {
-	return this.doubleWord = wordvalue * 2
+Modifier.prototype.doubleWord = function(wordValue) {
+	return this.doubleWord = wordValue * 2
 };
 
-Modifier.prototype.tripleWord = function(wordvalue) {
-	return this.tripleWord = wordvalue * 3
+Modifier.prototype.tripleWord = function(wordValue) {
+	return this.tripleWord = wordValue * 3
 };
 
 

@@ -1,9 +1,16 @@
-// var Points = function {
-// 	this.BASE = 0,
+var Points = function () {
+	this.POINTS = {
+		BLANK : 0,
+		ONE : 1
+	};
+}
+
+// Points.prototype.assignValues = function() {
+// 	const POINTS = {
+// 		BLANK : 0
+// 	};
+
+// 	return POINTS;
 // };
 
-// Points.prototype = {
-
-// }
-
-// module.exports = Points;
+module.exports = Points;
