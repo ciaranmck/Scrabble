@@ -1,31 +1,31 @@
 var assert = require('assert');
-var Tiles = require('../tiles.js');
+var Modifiers = require('../modifiers.js');
 
-describe('Tiles', function () {
-	var tiles;
+describe('Modifiers', function () {
+	var modifiers;
 
 beforeEach(function () {
-    tiles = new Tiles();
+    modifiers = new Modifiers();
   });
 
 it('should be worth 2 point as baseTile', function () {
-	assert.strictEqual(2, tiles.baseTile(2));
+	assert.strictEqual(2, modifiers.baseTile(2));
 });
 
 it('should be worth 4 points as doubleWord', function () {
-	assert.strictEqual(4, tiles.doubleWord(2));
+	assert.strictEqual(4, modifiers.doubleWord(2));
 });
 
 it('should be worth 6 points as tripleWord', function () {
-	assert.strictEqual(6, tiles.tripleWord(2));
+	assert.strictEqual(6, modifiers.tripleWord(2));
 });
 
 it('should be worth 4 points as doubleLetter', function () {
-	assert.strictEqual(4, tiles.doubleLetter(2));
+	assert.strictEqual(4, modifiers.doubleLetter(2));
 });
 
 it('should be worth 6 points as tripleLetter', function () {
-	assert.strictEqual(6, tiles.tripleLetter(2));
+	assert.strictEqual(6, modifiers.tripleLetter(2));
 });
 
 });
