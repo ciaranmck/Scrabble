@@ -1,6 +1,9 @@
 var Points = function () {
-	this.POINTS = {
-		BLANK : 0,
+	this.VALUES = {
+		BLANK : {
+			letters : [""],
+			value : 0
+		},
 		ONE : {		
 			letters : ["a", "e", "i", "l", "n", "o", "r", "s", "t", "u"],
 			value : 1
