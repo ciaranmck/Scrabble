@@ -25,7 +25,8 @@ var Letters = function() {
 		'w', 'w',
 		'x',
 		'y', 'y',
-		'z' 
+		'z',
+		'blank','blank'
 	];
 
 
