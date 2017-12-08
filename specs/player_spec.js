@@ -9,7 +9,12 @@ describe('Player', function () {
   	});
 
 it('should set PlayerOnes name', function () {
-assert.strictEqual("Ciaran", player.namePlayerOne("Ciaran"));
+	assert.strictEqual("Ciaran", player.namePlayerOne("Ciaran"));
+});
+
+it('should return PlayerOnes name', function() {
+	player.namePlayerOne("Ciaran");
+	assert.strictEqual("Ciaran", player.getPlayerOneName());
 });
 
 });
