@@ -8,7 +8,7 @@ var Letters = function() {
 		'f', 'f',
 		'g', 'g', 'g',
 		'h', 'h',
-		'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i',
+		'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 
 		'j',
 		'k',
 		'l', 'l', 'l', 'l',
@@ -28,6 +28,16 @@ var Letters = function() {
 		'z',
 		'blank','blank'
 	];
+
+	Letters.prototype.getRandomNumber = function() {
+		return Math.floor(Math.random() * (101));
+	};
+
+	Letters.prototype.setPlayerTiles = function() {
+		let tempArray = [];
+		tempArray = this.letterBag.splice(this.getRandomNumber());
+		return tempArray.length;	
+	};
 
 
 };
