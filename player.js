@@ -1,4 +1,5 @@
 const Letters = require('./letters.js')
+const Points = require('./points.js')
 
 var Player = function () {
 	this.PlayerOne;
