@@ -8,7 +8,7 @@ describe('Player', function () {
     letters = new Letters();
   	});
 
-it('should set take the letter A from the letterBag array', function () {
+it('should take the letter A from the letterBag array', function () {
 	assert.strictEqual("a", letters.letterBag.shift());
 });
 

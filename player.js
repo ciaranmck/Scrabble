@@ -26,8 +26,12 @@ var Player = function () {
 		let letters = new Letters();
 
 		letters.shuffleTiles();
+
 		return this.PlayerOneHand = letters.setPlayerTiles();
 	};
 };
+
+// Could refactor players to be a hash containing their name, hand, and current points tally
+// Need to refactor getHand method to incorporate both players
 
 module.exports = Player;
