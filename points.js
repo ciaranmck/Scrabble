@@ -28,6 +28,6 @@ var Points = function () {
 		Y : 1,
 		Z : 1,
 	};
-}
+};
 
 module.exports = Points;
