@@ -24,4 +24,10 @@ it('should return a shuffled bag of letters', function() {
 	console.log(letters.letterBag.shift());
 });
 
+it('should return an array of 7 letter tiles', function() {
+	letters.shuffleTiles();
+	assert.strictEqual(7, letters.setPlayerTiles().length);
+	console.log(letters.setPlayerTiles());
+});
+
 });

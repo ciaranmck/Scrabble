@@ -29,17 +29,12 @@ var Letters = function() {
 		'blank','blank'
 	];
 
-	Letters.prototype.getRandomNumber = function() {
-		return Math.floor(Math.random() * (101));
-	};
-
 	Letters.prototype.setPlayerTiles = function() {
 		let tempArray = [];
 
 		for (var i = 0; i < 7; i++) {
-		let randomNumber = this.getRandomNumber()
-		tempArray = this.letterBag.splice(randomNumber, 1);	
-		};
+		tempArray.push(this.letterBag.shift());
+		}
 		return tempArray;
 	};
 
