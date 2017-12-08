@@ -1,13 +1,17 @@
+const Letters = require('./letters.js')
+
 var Player = function () {
 	this.PlayerOne;
 	this.PlayerTwo;
+	this.PlayerOneHand = [];
+	this.PlayerTwoHand = [];
 
 	Player.prototype.namePlayerOne = function(playerName) {
-		return PlayerOne = playerName;
+		PlayerOne = playerName;
 	};
 
 	Player.prototype.namePlayerTwo = function(playerName) {
-		return PlayerTwo = playerName;
+		PlayerTwo = playerName;
 	};
 
 	Player.prototype.getPlayerOneName = function() {
@@ -19,7 +23,10 @@ var Player = function () {
 	};
 
 	Player.prototype.getHand = function() {
+		let letters = new Letters();
 
+		letters.shuffleTiles();
+		return this.PlayerOneHand = letters.setPlayerTiles();
 	};
 };
 
