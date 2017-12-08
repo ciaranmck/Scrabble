@@ -18,8 +18,10 @@ it('should have 99 letters remaining in the letterBag', function() {
 	assert.strictEqual(99, letters.letterBag.length);
 });
 
-it('should return a random number betwee 0 and 99', function() {
-	assert.strictEqual(44, letters.setPlayerTiles());
+it('should return a shuffled bag of letters', function() {
+	letters.shuffleTiles();
+	assert.strictEqual(100, letters.letterBag.length);
+	console.log(letters.letterBag.shift());
 });
 
 });

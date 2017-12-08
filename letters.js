@@ -35,8 +35,20 @@ var Letters = function() {
 
 	Letters.prototype.setPlayerTiles = function() {
 		let tempArray = [];
-		tempArray = this.letterBag.splice(this.getRandomNumber());
-		return tempArray.length;	
+
+		for (var i = 0; i < 7; i++) {
+		let randomNumber = this.getRandomNumber()
+		tempArray = this.letterBag.splice(randomNumber, 1);	
+		};
+		return tempArray;
+	};
+
+	Letters.prototype.shuffleTiles = function() {
+		for (let i = this.letterBag.length - 1; i > 0; i--) {
+    		const j = Math.floor(Math.random() * (i + 1));
+    		[this.letterBag[i], this.letterBag[j]] = [this.letterBag[j], this.letterBag[i]];
+		};
+		return this.letterBag;
 	};
 
 
