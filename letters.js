@@ -32,7 +32,7 @@ var Letters = function() {
 	Letters.prototype.setPlayerTiles = function() {
 		let tempArray = [];
 
-		for (var i = 0; i < 7; i++) {
+		for (var i = 0; i < 10; i++) {
 		tempArray.push(this.letterBag.shift());
 		}
 		return tempArray;

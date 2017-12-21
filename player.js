@@ -26,8 +26,6 @@ var Player = function () {
 	Player.prototype.getHand = function() {
 		let letters = new Letters();
 
-		letters.shuffleTiles();
-
 		return this.PlayerOneHand = letters.setPlayerTiles();
 	};
 };

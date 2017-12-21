@@ -13,8 +13,8 @@ it('should set and then return PlayerOnes name', function() {
 	assert.strictEqual("Ciaran", player.getPlayerOneName());
 });
 
-it('should display the players hand a 7 element array', function() {
-	assert.strictEqual(7, player.getHand().length);
+it('should display the players hand a 10 element array', function() {
+	assert.strictEqual(10, player.getHand().length);
 });
 
 });

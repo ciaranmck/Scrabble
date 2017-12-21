@@ -1,7 +1,7 @@
 var assert = require('assert');
 var Letters = require('../letters.js');
 
-describe('Player', function () {
+describe('Letters', function () {
 	var letters;
 
 	beforeEach(function () {
@@ -9,7 +9,7 @@ describe('Player', function () {
   	});
 
 it('should take the letter A from the letterBag array', function () {
-	assert.strictEqual("a", letters.letterBag.shift());
+	assert.strictEqual("A", letters.letterBag.shift());
 });
 
 it('should have 99 letters remaining in the letterBag', function() {
@@ -24,9 +24,9 @@ it('should return a shuffled bag of letters', function() {
 	console.log(letters.letterBag.shift());
 });
 
-it('should return an array of 7 letter tiles', function() {
+it('should return an array of 10 letter tiles', function() {
 	letters.shuffleTiles();
-	assert.strictEqual(7, letters.setPlayerTiles().length);
+	assert.strictEqual(10, letters.setPlayerTiles().length);
 	console.log(letters.setPlayerTiles());
 });
 
