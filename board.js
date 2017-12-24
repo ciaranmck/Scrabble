@@ -26,5 +26,6 @@ Board.prototype.setup = function() {
 	}
 
 	// Next steps: we want to bundle everything together and get a grid presenting in the browswer
+	// A server.js file needs to be created and linked in the package.json file
 
 module.exports = Board;
